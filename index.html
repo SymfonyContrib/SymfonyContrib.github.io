@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="SymfonyContrib : Empowering Collaboration" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>SymfonyContrib</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/symfony-contib/symfony-contrib.github.io">View on GitHub</a>
+
+          <h1 id="project_title">SymfonyContrib</h1>
+          <h2 id="project_tagline">Empowering Collaboration</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/symfony-contib/symfony-contrib.github.io/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/symfony-contib/symfony-contrib.github.io/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="what-is-symfonycontrib" class="anchor" href="#what-is-symfonycontrib"><span class="octicon octicon-link"></span></a>What is SymfonyContrib?</h1>
+
+<p>SymfonyContrib is an open source community for third party contributions around the <a href="http://symfony.com">Symfony</a> framework by empowering developers to share their code without having to commit their life to supporting it and to give consistency for users of the code.</p>
+
+<h2>
+<a name="example-problem" class="anchor" href="#example-problem"><span class="octicon octicon-link"></span></a>Example Problem</h2>
+
+<p>You write a bundle for Symfony2 and want to share it with the world, what do you do?</p>
+
+<p>There are many ways but let's take the common approach:</p>
+
+<ul>
+<li>You put your code under you own personal or company PHP namespace.</li>
+<li>Publish it on <a href="https://github.com/">Github</a> under your personal or company account.</li>
+<li>Publish it on <a href="http://packagist.org/">Packagist</a>
+</li>
+<li>Wait for all the downloads and pull requests to come pouring in.</li>
+</ul><p>While this is not a horrible way to go about open sourcing your Symfony contribution, there are some inherent problems with this approach.</p>
+
+<ul>
+<li>
+<strong>Support commitment.</strong> As most open source developers know, it is not writing the code that takes time but supporting it after you have released it. Most developers do not plan on supporting their code for as long as there are people using it, nor should they have to make such a commitment as it discourages them from sharing. Pull requests are a great feature to leverage others to help maintain an open source project but they also need to be reviewed, discussed, tested, etc. and that takes time and time takes people. If you find someone that you trust you can add them as a collaborator on your repository to help. This all only works if you are actively supporting the project. If you don't respond to pull requests or take too long because you don't have time, then people just fork your code rename it and on and on creating a lot of fragmentation instead of collaboration. Let's consider you do support your code and gather lots of users and contributors but one day, for whatever reason, you don't want support it any longer. If you have contributors that you trust you can add them to your repository but you still have to keep the code under your name and in your account even though you no longer have anything to do with it. You could transfer it to someone else's account and start the process all over again but see #2.</li>
+<li>
+<strong>Consistency.</strong> For the saneness of both user's of your code and developers of code that might leverage your code, it means a lot to not have to change your code all the time because ownership and/or namespaces are changing.</li>
+<li>
+<strong>Collaboration.</strong> Community and collaboration are the heart and soul of any open source project. As we have shown above, it is hard to encourage collaboration and a sense of community ownership with code spread far and wide under and dependent on individual commitment instead of community commitment.</li>
+</ul><h2>
+<a name="how-does-symfonycontrib-help-solve-these-problems" class="anchor" href="#how-does-symfonycontrib-help-solve-these-problems"><span class="octicon octicon-link"></span></a>How does SymfonyContrib help solve these problems?</h2>
+
+<p><strong>Short answer:</strong></p>
+
+<ul>
+<li>Provide a community PHP namespace to publish code under.</li>
+<li>Provide a Github Organization to publish projects under.</li>
+<li>Provide a community website.</li>
+</ul><p><strong>Long answer:</strong>
+By looking at other successful open source projects that have many contributors, they provide a common place to publish your code where maintainers can easily come and go. This provides consistency and gives a sense of community empowerment and ownership that makes it easier for more people to get involved.</p>
+
+<h2>
+<a name="how-does-symfonycontrib-work-how-can-i-contribute-code" class="anchor" href="#how-does-symfonycontrib-work-how-can-i-contribute-code"><span class="octicon octicon-link"></span></a>How does SymfonyContrib work? How can I contribute code?</h2>
+
+<p>The community will work out how SymfonyContrib operates as we go forward. But to start with, this is how you can become part of the community and contribute your code:</p>
+
+<ul>
+<li>If you haven't already, sign up for a <a href="https://github.com/">Github account</a>
+</li>
+<li>Make sure your PHP code is written under the "SymfonyContrib" top level namespace. You code should also follow under a 2nd level namespace that describes the grouping. Some examples of second level namespaces are Bundle, Bridge, Component, Helper, etc. For example if your code is a Symfony2 bundle called ExampleBundle then your PHP namespace should be "SymfonyContrib\Bundle\ExampleBundle". Note: You should not include your name, company name, or any other ownership in the namespace. For example, if you wrote a pagination bundle it should be called PaginationBundle or AdvancedPaginationBundle but not AcmePaginationBundle.</li>
+<li>
+<a href="https://github.com/symfony-contib/symfony-contrib.github.io/issues/new">Submit a issue</a> with a link to your Github repository and add the "New Project" label on the issue.</li>
+<li>A community leader will verify your request, create a repository, and give you access to the repo. From there you can add your push your code to the repo, add additional maintainers, etc.</li>
+</ul><h2>
+<a name="faq" class="anchor" href="#faq"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<p><strong>How is SymfonyContrib different from FriendsOfSymfony or other Symfony communities?</strong>
+Other groups limit their members, limit contribution, or are focused around a project. These are not a bad things, they are just different approaches. SymfonyContrib aims to be open to all and build a community to maintain it. Does that mean there will be no rules or standards? No, it just means that the rules and standards will be dictated by the community. SymfonyContrib is not in competition with any open source groups. We are only trying to complement them by helping to empower more collaboration.</p>
+
+<p><strong>Am I required to maintain my code if I contribute it to SymfonyContrib?</strong>
+Not forever, but you should plan to commit as much support as you can. If you can not or do not want to support your code at all, then it is best left in your own public repo where others can still get to it. If they have the time they can contribute it to SymfonyContrib and get it's community life started.</p>
+
+<p><strong>I can support my code some but not as much as it will probably need. Can I contribute my code?</strong>
+Yes. As long as you are willing to stick around long enough to help get the project's feet off the ground, you can call out for help maintaining the project in the top of your README file.</p>
+
+<p><strong>How can I be credited as an author/maintainer if my name is not in the namespace?</strong>
+You are welcome to put your name as an author/maintainer/sponsor in the README, maintainers.txt, humans.txt, etc. Many open source projects often keep a history of the project in this manner. Also, most likely all of your commits will have your name attached to them which allows everyone to see the great work you have done.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">SymfonyContrib maintained by <a href="https://github.com/symfony-contib">symfony-contib</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-43939972-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
