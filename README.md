@@ -1,4 +1,4 @@
-symfony-contrib.github.io
+symfonycontrib.github.io
 =========================
 
 Symfony Contrib Website
