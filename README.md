@@ -1,4 +1,4 @@
-symfonycontrib.github.io
+[SymfonyContrib.com](http://symfonycontrib.com/)
 =========================
 
-Symfony Contrib Website
+SymfonyContrib Website
